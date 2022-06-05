@@ -12,14 +12,7 @@ import { AngularFireModule } from '@angular/fire';
 import {AngularFireFunctionsModule} from '@angular/fire/functions'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZqjocPcKt8P18fUksBNOymLOkteZCA7E",
-  authDomain: "americo-perez.firebaseapp.com",
-  databaseURL: "https://americo-perez-default-rtdb.firebaseio.com",
-  projectId: "americo-perez",
-  storageBucket: "americo-perez.appspot.com",
-  messagingSenderId: "269921937210",
-  appId: "1:269921937210:web:93b1e60328bcea590d9203",
-  measurementId: "G-SN41QV16M5"
+ // Your Firebase App Config
 };
 
 @NgModule({
