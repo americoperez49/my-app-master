@@ -1,0 +1,18 @@
+<div>
+    <h4 mat-dialog-title>Send me an E-mail</h4>
+    <mat-dialog-content [formGroup]="form">
+        <mat-form-field color="accent" class="example-full-width">
+            <input matInput type="email" placeholder="E-mail" formControlName="email" required>
+            <mat-error *ngIf="form.controls.email.invalid">{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" color="accent" class="example-full-width">
+            <textarea matInput placeholder="Message" formControlName="message" required></textarea>
+            <mat-error *ngIf="form.controls.message.invalid">{{getMessageErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </mat-dialog-content>
+    <br>
+    <mat-dialog-actions>
+        <button mat-raised-button color="accent" (click)=onCloseSubmit()>Submit</button>
+        <button mat-raised-button  (click)=onCloseCancel()>Cancel</button>
+    </mat-dialog-actions>
+</div>

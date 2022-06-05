@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "americo-perez"
+  },
+  "targets": {
+    "americo-perez": {
+      "hosting": {
+        "my-app": [
+          "americo-perez"
+        ]
+      }
+    }
+  }
+}
